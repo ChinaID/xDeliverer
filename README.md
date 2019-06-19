@@ -10,13 +10,10 @@ License: MPL
 
 # Usage
 Go to execute file location, such as "C:\Users\tom\Desktop\xDeliverer\Win64\Debug"
-
 cd C:\Users\tom\Desktop\xDeliverer\Win64\Debug
 
 Install:
-
 xDeliverer.exe /install
 
 Uninstall:
-
 xDeliverer.exe /uninstall
