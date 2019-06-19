@@ -32,15 +32,27 @@ But nothing will happen because you have do not configure xDeliverer.ini for run
 Just like this:
 
 [Server]
+
 host=1.1.1.1
+
 username=user
+
 password=password
+
 port=21
+
 protocol=sftp
+
 path=/incoming
+
 filename=
+
 [Local]
+
 path=d:\
+
 filename=a.text
+
 [Schedule]
+
 when=17:00:00
