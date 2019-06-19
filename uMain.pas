@@ -242,10 +242,11 @@ begin
       except
         on e: ESSH2Exception do RecordLog('ERR: ' + e.Message);
       end;
-    except
+    except 
       on e: EFOpenERROR do RecordLog('ERR: ' + e.Message);
     end;
-  except on e: ESSH2Exception do RecordLog(e.Message);
+  except 
+    on e: ESSH2Exception do RecordLog('ERR:' + e.Message);
   end;
   RecordLog('Disconnect from server.');
   SFTPClient.Disconnect;
@@ -278,10 +279,10 @@ begin
       if ServerFileExists(f.RemotePath, f.RemoteFileName) then RecordLog(f.RemotePath + f.RemoteFileName + ' has been stored on server, transfer completed.')
       else RecordLog('ERR: Transfer finished with error, file can not be found on server.');
     except
-      on e: Exception do RecordLog(e.Message);
+      on e: Exception do RecordLog('ERR:' + e.Message);
     end;
   except
-    on e: Exception do RecordLog(e.Message);
+    on e: Exception do RecordLog('ERR:' + e.Message);
   end;
   RecordLog('Disconnect from server.');
   FTPClient.Disconnect;
@@ -357,7 +358,7 @@ begin
       WriteLN(IniFile, 'path=');
       WriteLN(IniFile, 'filename=');
       WriteLN(IniFile, '[Local]');
-      WriteLN(IniFile, 'path');
+      WriteLN(IniFile, 'path=');
       WriteLN(IniFile, 'filename=');
       WriteLN(IniFile, '[Schedule]');
       WriteLN(IniFile, 'when=');
