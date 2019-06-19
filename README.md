@@ -1,6 +1,10 @@
 # xDeliverer
 A very simple service application to deliver A file to ftp/sftp server
 
+Website: http://www.zhirenhang.com/programing/xdeliverer/
+
+Bug report: chinaid@msn.com
+
 # Copyright
 Base author: [Zeljko Marjanovic] https://bitbucket.org/ZeljkoMarjanovic/libssh2-delphi
 
