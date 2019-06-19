@@ -1,5 +1,5 @@
 # xDeliverer
-A very simple service application to deliver A file to ftp/sftp server
+A very simple service application to deliver A file to ftp/sftp server automaticlly
 
 Website: http://www.zhirenhang.com/programing/xdeliverer/
 
@@ -31,7 +31,7 @@ xDeliverer.exe /uninstall
 
 Run:
 
-Go to Windows Service you will see a service "xDelivererService" if your installation is successful, then start it.
+Go to Windows Service you will see a service "xDelivererService" if your installation is successful, then start it
 
 Configuration:
 
