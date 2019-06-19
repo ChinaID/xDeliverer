@@ -10,7 +10,7 @@ Base author: [Zeljko Marjanovic] https://bitbucket.org/ZeljkoMarjanovic/libssh2-
 
 Modified from: https://github.com/pult/libssh2_delphi
 
-License: MPL
+License: MPL, free to use.
 
 # Usage
 Tested platform: Win10 x64
