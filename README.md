@@ -13,7 +13,7 @@ Modified from: https://github.com/pult/libssh2_delphi
 License: MPL, free to use.
 
 # Usage
-Tested platform: Win10 x64
+Tested platform: Microsoft Windows 10 x64
 
 To install / Uninstall you should have administrator permission
 
@@ -32,9 +32,12 @@ xDeliverer.exe /uninstall
 Run:
 
 Go to Windows Service you will see a service "xDelivererService" if your installation is successful, then start it.
-But nothing will happen because you have not configured xDeliverer.ini for runing, now it's time to set your parameters into C:\Users\tom\Desktop\xDeliverer\Win64\Debug\xDliverer.ini.
 
-Just like this:
+Configuration:
+
+After service started, nothing will happen, because you have not yet completed configuration file for runing, now it is time to setup your parameters into C:\Users\tom\Desktop\xDeliverer\Win64\Debug\xDliverer.ini, a configuration file without parameters will be created automatically once service started, if it does not existed please create it by your self, the name of configuration file should same as the execute file without extention name, such as execute file xDeliverer.exe with configuration file xDeliverer.ini
+
+Configuration file should like this:
 
 [Server]
 
