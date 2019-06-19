@@ -32,7 +32,8 @@ xDeliverer.exe /uninstall
 Run:
 
 Go to Windows Service you will see a service "xDelivererService" if your installation is successful, then start it.
-But nothing will happen because you have not configure xDeliverer.ini for runing, now it's time to set your parameters into C:\Users\tom\Desktop\xDeliverer\Win64\Debug\xDliverer.ini,
+But nothing will happen because you have not configured xDeliverer.ini for runing, now it's time to set your parameters into C:\Users\tom\Desktop\xDeliverer\Win64\Debug\xDliverer.ini.
+
 Just like this:
 
 [Server]
