@@ -227,7 +227,7 @@ begin
     SFTPClient.Connect;
     if not SFTPClient.Connected then begin
       RecordLog('ERR: ' + SFTPClient.GetLastSSHError);
-      RecordLog('Connect to server failed, service terminated.');
+      RecordLog('Connect to server failed, session terminated.');
       exit;
     end;
     RecordLog('Connected to server.');
@@ -238,7 +238,7 @@ begin
         RecordLog('Starting transfer.');
         SFTPClient.Put(f.fs, f.RemotePath + f.RemoteFileName, true);
         if ServerFileExists(f.RemotePath, f.RemoteFileName) then RecordLog('Transfer completed.')
-        else RecordLog('ERR: Transfer finished with error, file can be found on server.');
+        else RecordLog('ERR: Transfer finished with error, file can not be found on server.');
       except
         on e: ESSH2Exception do RecordLog('ERR: ' + e.Message);
       end;
@@ -265,7 +265,7 @@ begin
     FTPClient.Connect;
     if not FTPClient.Connected then begin
       RecordLog('ERR: ' + FTPClient.LastCmdResult.Text.Text);
-      RecordLog('Connect to server failed, service terminated.');
+      RecordLog('Connect to server failed, session terminated.');
       exit;
     end;
     RecordLog('Connected to server.');
@@ -329,7 +329,7 @@ begin
   FileExtString     := ExtractFileExt(FileString);
   LenExt            := Length(FileExtString);
   if LenExt = 0 then Result := FileWithExtString
-  else Result := Copy(FileWithExtString,1,(LenNameWithExt-LenExt));
+  else Result := Copy(FileWithExtString, 1, (LenNameWithExt - LenExt));
 end;
 
 function TxDelivererService.InitializeConfigureFile: TIniFile;
@@ -363,7 +363,7 @@ begin
       WriteLN(IniFile, '[Schedule]');
       WriteLN(IniFile, 'when=');
       CloseFile(IniFile);
-      RecordLog('Please restart services to apply new settings after configuration file has been full filled.');
+      RecordLog('Please restart services to apply new settings after configuration file has been full filled or modified.');
     end;
   end;
   Result := TIniFile.Create(ConfigureFileName);
