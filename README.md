@@ -37,17 +37,29 @@ After service started, nothing will happen, because you have not yet completed c
 Configuration file should like this:
 
 [Server]
+
 host=1.1.1.1
+
 username=user
+
 password=password
+
 port=21
+
 protocol=sftp
+
 path=/incoming
+
 filename=
+
 [Local]
+
 path=d:\
+
 filename=a.text
+
 [Schedule]
+
 when=17:00:00
 
 # Bug report
