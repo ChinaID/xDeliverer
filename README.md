@@ -1,7 +1,7 @@
 # xDeliverer
-It is a very simple Windows Services Application to deliver a file to ftp/sftp server. Some times, you may need an application that can just deliver one file to remote server
+xDeliverer is a straightforward Windows Service Application designed to transfer a single file to a remote FTP/SFTP server.
 
-Website: http://www.zhirenhang.com/programing/xdeliverer/
+Website: http://www.zhiyanhang.ltd/programing/xdeliverer/
 
 # Copyright
 Base author: [Zeljko Marjanovic] https://bitbucket.org/ZeljkoMarjanovic/libssh2-delphi
