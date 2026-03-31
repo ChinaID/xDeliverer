@@ -1,7 +1,7 @@
 # xDeliverer
 xDeliverer is a straightforward Windows Service Application designed to transfer a single file to a remote FTP/SFTP server.
 
-Website: http://www.zhiyanhang.ltd/programing/xdeliverer/
+Website: http://www.zhirenhang.com/programing/xdeliverer/
 
 # Copyright
 Base author: [Zeljko Marjanovic] https://bitbucket.org/ZeljkoMarjanovic/libssh2-delphi
